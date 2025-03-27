@@ -12,8 +12,8 @@ from datetime import datetime,timedelta
 import time
 
 # step=2 Twilio Credentials
-account_sid='AC39304ce5e8876a9ea98489081efead22'
-Token_num='732b40b1f551543dd67928b8032bdb13'
+account_sid='A\c sid'
+Token_num='T_num'
 
 client=Client(account_sid,Token_num)
 
@@ -21,7 +21,7 @@ client=Client(account_sid,Token_num)
 def send_wp_msg(recipient_number,message_body):
     try:
         message=client.messages.create(
-            from_='Whatsapp:+14155238886',
+            from_='Whatsapp:+Put Yours,
             body=message_body,
             to=f'Whatsapp:{recipient_number}'
         )
